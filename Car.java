@@ -6,6 +6,8 @@ public class Car {
 	private int year;
 	private double price;
 
+	public Car() {
+	}
 
 	public Car(String make, String model, int year, double price) {
 		this.make = make;
@@ -13,38 +15,41 @@ public class Car {
 		this.year = year;
 		this.price = price;
 	}
-	
+
 	public String getmake() {
-		return make;		
+		return make;
 	}
-	
+
 	public void setmake(String make) {
 		this.make = make;
 	}
-	
+
 	public String getmodel() {
 		return model;
 	}
+
 	public void setmodel(String model) {
 		this.model = model;
 	}
-	
+
 	public int getyear() {
 		return year;
 	}
+
 	public void setyear(int year) {
 		this.year = year;
 	}
-	
+
 	public double getprice() {
 		return price;
 	}
+
 	public void setdouble(double price) {
 		this.price = price;
 	}
-	
+
 	@Override
-    public String toString() {
-        return make + ", " + model + ", " + year + ",  $" + price  ;
-    }
+	public String toString() {
+		return make + ", " + model + ", " + year + ",  $" + price;
 	}
+}

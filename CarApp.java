@@ -36,8 +36,9 @@ public class CarApp {
 		}
 				
 		System.out.println("Current Inventory:");
-		System.out.println(carArrList);
-		
+		for(Car c : carArrList) {
+		System.out.println(c);
+		}
 //		for (int i = 0; i <= numCars; i++) {
 //			System.out.println(carArrList.get(i));
 //		}
