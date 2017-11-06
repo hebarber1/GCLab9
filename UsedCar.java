@@ -21,6 +21,6 @@ public class UsedCar extends Car{
 
 	@Override
 	public String toString() {
-		return make + ", " + model + ", " + year + ",  $" + price + mileage;
+		return make + ", " + model + ", " + year + ",  $" + price + ", " + mileage;
 	}
 }

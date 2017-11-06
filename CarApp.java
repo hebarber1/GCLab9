@@ -23,12 +23,14 @@ public class CarApp {
 		//print the car selected
 		System.out.println(carArrList().get(numCar -1));
 		
+		updateCar(carArrList(), (numCar-1));
+		System.out.println(updateCar(carArrList(), (numCar-1)));
 		//remove the selected car
 		//create method to remove the selected car
-		carArrList = carArrList.remove(numCar -1);
+//		carArrList.remove(numCar -1);
 		
 		//update list to reflect the removed car
-		System.out.println(carArrList());
+//		System.out.println(carArrList());
 		
 //		System.out.println("Current Inventory:" + deleteCar(carArrList(), (numCar-1));
 		
@@ -57,7 +59,7 @@ public class CarApp {
 	    
 	        }
 	        
-	       
+	      
 	        
 //
 //		int j = 0;
@@ -94,6 +96,10 @@ public class CarApp {
 ////        		System.out.println();
         		
         	}
-
+		public static ArrayList<Car> updateCar(ArrayList<Car> CarList, int userNum){
+		    CarList.remove((userNum - 1));
+		    
+		    return carArrList();
 
 	}
+}
